@@ -4,6 +4,9 @@ import Inicio from "./components/inicio/Inicio";
 import Servicios from "./components/Servicios/Servicios";
 import Wsp from "./components/wsp/Wsp";
 import franco from "../src/components/Colaboradores/franco.jpeg"
+import rodolfo from "../src/components/Colaboradores/Rodolfo.png"
+import delfina from "../src/components/Colaboradores/Delfina Grey.png" 
+import javier from "../src/components/Colaboradores/Javier.png" 
 
 
 import daniela from "../src/components/team/Daniela.jpeg"
@@ -129,6 +132,16 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
 
         componentes={[
           {
+            "usuario": rodolfo,
+            "rol": "Advisor",
+            "role": "Advisor",
+            "nombre": "Rodolfo Goya",
+            "profesion": "Ph.D. en Bioquímica",
+            "job":"Ph.D. in Biochemistry",
+            "texto_eng":"Rodolfo Goya, originally a Senior Researcher at CONICET, is a prominent figure in the world of scientific research.",
+            "texto": "Rodolfo Goya, originalmente investigador Superior del CONICET, es una figura prominente en el mundo de la investigación científica."
+          },
+          {
             "usuario": daniela,
             "rol": "Científico",
             "role": "Scientist",
@@ -138,6 +151,38 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
             "texto_eng":"With a Ph.D. in Computer Science, she leads the CI2S LAB in artificial intelligence. Her current project at the Historical Museum Sarmiento aims to promote STEAM education.",
             "texto": "Doctora en Ciencias Informáticas, lidera el CI2S LAB en inteligencia artificial. Su proyecto actual en el Museo Histórico Sarmiento busca fomentar la enseñanza STEAM."
           },
+          {
+            "usuario": delfina,
+            "rol": "Científico",
+            "role": "Scientist",
+            "nombre": "María Delfina Gallardo",
+            "profesion": "Biotecnóloga y Bióloga Molecular",
+            "job":"Biotechnologist and Molecular Biologist",
+            "texto_eng":"María Delfina Gallardo, Biotechnologist and Molecular Biologist, is our valuable PARTNER IN SCIENCE AND DEVELOPMENT, hailing from the Iuvenis Research Center, an institution dedicated to biotechnology research.",
+            "texto": "María Delfina Gallardo, Biotecnóloga y Bióloga Molecular, es nuestra valiosa PARTNER IN SCIENCE AND DEVELOPMENT, proveniente del Centro de Investigación Iuvenis, una institución dedicada a la investigación en biotecnología."
+          },
+          {
+            "usuario": samanta,
+            "rol": "Científico",
+            "role": "Scientist",
+
+            "nombre": "Samanta Adriana Reyes Molina",
+            "profesion": "Doctora en Ciencias Edafología",
+            "job":"Ph.D. in Soil Science",
+            "texto": "Doctora en Ciencias Edafología y Licenciada en Biología, especializada en ecología y fisiología vegetal. Líder ambiental comprometida con proyectos sostenibles.",
+            "texto_eng":"A Ph.D. in Soil Science and a Licensed Biologist, specializing in ecology and plant physiology. A dedicated environmental leader involved in sustainable projects.",
+        },  
+        {
+          "usuario": javier,
+          "rol": "Científico",
+          "role": "Scientist",
+
+          "nombre": "Javier Darío Sánchez Ortiz",
+          "profesion": "Ingeniero Industrial",
+          "job":"Industrial Engineer",
+          "texto": "Javier Darío Sánchez Ortiz, un ingeniero civil industrial, se destaca por su experiencia en gestión de proyectos y liderazgo. Reconocido por su creatividad y eficiencia en la resolución de problemas.",
+          "texto_eng":"Javier Darío Sánchez Ortiz, an industrial engineer, stands out for his experience in project management and leadership. Recognized for his creativity and efficiency in problem-solving.",
+      },  
           {
             "usuario": nahuel,
             "rol": "Científico",
@@ -151,17 +196,7 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
             An outstanding student in molecular biology, Nahuel Turco holds the highest GPA in his field of study and is in an advanced stage of his academic journey.
             `
           },
-          {
-            "usuario": samanta,
-            "rol": "Científico",
-            "role": "Scientist",
-
-            "nombre": "Samanta Adriana Reyes Molina",
-            "profesion": "Doctora en Ciencias Edafología",
-            "job":"Ph.D. in Soil Science",
-            "texto": "Doctora en Ciencias Edafología y Licenciada en Biología, especializada en ecología y fisiología vegetal. Líder ambiental comprometida con proyectos sostenibles.",
-            "texto_eng":"A Ph.D. in Soil Science and a Licensed Biologist, specializing in ecology and plant physiology. A dedicated environmental leader involved in sustainable projects.",
-        },          // Puedes agregar más objetos con datos aquí según sea necesario
+                  // Puedes agregar más objetos con datos aquí según sea necesario
         ]}
       />
 
@@ -563,6 +598,36 @@ function App() {
 
   const colaboradorData = [
     {
+      usuario: rodolfo,
+      rol: 'Advisor',
+      nombre: 'Rodolfo Goya',
+      profesion: 'Ph.D. en Bioquímica',
+      job:`Ph.D. en Biochemistry`,
+      texto: `
+      Rodolfo Goya, originalmente investigador Superior del CONICET, es una figura prominente en el mundo de la investigación científica. A lo largo de su carrera, ha recibido financiamiento de prestigiosas instituciones como el Instituto Nacional sobre Envejecimiento de Estados Unidos, la Unión Europea y otras agencias nacionales e internacionales, lo que demuestra el reconocimiento global de su trabajo.
+
+      Con una trayectoria destacada, el Dr. Goya ha liderado investigaciones pioneras en el campo de la criónica, siendo un referente tanto en Estados Unidos como en Argentina. No solo ha integrado cuatro directorios en organizaciones criónicas estadounidenses, sino que también lidera el desarrollo de la criónica en Argentina, logrando hitos significativos como la criopreservación exitosa del cerebro de una paciente en 2018, enviado posteriormente a una empresa en Arizona, para su almacenamiento a largo plazo.
+      
+      Además de su papel como investigador, el Dr. Goya es un visionario atento a las tecnologías emergentes que podrían revolucionar la longevidad y las capacidades biológicas humanas en el futuro cercano. Su visión trasciende los límites convencionales, abrazando el potencial transformador de la ciencia y la tecnología en la mejora de la vida humana.
+      
+      En su rol como Advisor en 1mPossible, el Dr. Goya canaliza su vasta experiencia y conocimiento científico hacia proyectos innovadores que buscan expandir los límites de la criopreservación y explorar nuevas fronteras en la medicina regenerativa. Su compromiso con el avance científico y su visión optimista hacia el futuro lo sitúan como una figura inspiradora en el campo de la investigación biológica y la medicina del siglo XXI.
+      
+      `,
+
+      texto_eng:`
+      Rodolfo Goya, originally a Senior Researcher at CONICET, is a prominent figure in the world of scientific research. Throughout his career, he has received funding from prestigious institutions such as the National Institute on Aging of the United States, the European Union, and other national and international agencies, demonstrating the global recognition of his work.
+
+With an outstanding track record, Dr. Goya has led pioneering research in the field of cryonics, being a reference both in the United States and in Argentina. He has not only served on four boards in American cryonic organizations but also spearheaded the development of cryonics in Argentina, achieving significant milestones such as the successful cryopreservation of a patient's brain in 2018, subsequently sent to a company in Arizona for long-term storage.
+
+In addition to his role as a researcher, Dr. Goya is a visionary closely monitoring emerging technologies that could revolutionize longevity and human biological capabilities in the near
+
+future. His vision transcends conventional boundaries, embracing the transformative potential of science and technology in improving human life.
+
+In his role as an Advisor at 1mPossible, Dr. Goya channels his vast experience and scientific knowledge into innovative projects aimed at pushing the boundaries of cryopreservation and exploring new frontiers in regenerative medicine. His commitment to scientific advancement and optimistic outlook towards the future position him as an inspiring figure in the field of biological research and 21st-century medicine.    
+      `
+    },
+
+    {
       usuario: daniela,
       rol: 'Científico',
       nombre: 'Daniela López De Luise',
@@ -598,6 +663,36 @@ En la actualidad, divide su tiempo entre su rol de investigadora, su rol en la I
       
       Throughout her time at ITBA (Instituto Tecnológico de Buenos Aires), she created and directed the first database laboratory in 1998, among other activities. Currently, she divides her time between her roles as a researcher, her position in IEEE Argentina Chapter, and her numerous research, development, and innovation projects related to computational intelligence. Her latest project (2019) involves the establishment of a novel architecture for islands of research, development, and innovation at the Museo Histórico Sarmiento, in collaboration with the SCA (Sociedad Científica Argentina). The goal is to create a collaborative space for researchers, companies, intermediary organizations, and educators interested in addressing STEAM (science, technology, engineering, art, and mathematics) education challenges.
             
+      `
+    },
+    {
+      usuario: delfina,
+      rol: 'Científico',
+      nombre: 'María Delfina Gallardo',
+      profesion: 'Biotecnóloga y Bióloga Molecular',
+      job:`Biotechnologist and Molecular Biologist`,
+      texto: `
+      María Delfina Gallardo, Biotecnóloga y Bióloga Molecular, es nuestra valiosa PARTNER IN SCIENCE AND DEVELOPMENT, proveniente del Centro de Investigación Iuvenis, una institución dedicada a la investigación en biotecnología. Con una sólida formación y experiencia en biotecnología y biología molecular, Delfina aporta una perspectiva única y un compromiso apasionado con la misión de 1mPossible.
+
+      Su liderazgo como directora de investigación en Iuvenis refleja su profundo compromiso con la investigación científica y el desarrollo de soluciones efectivas para abordar los desafíos asociados con el envejecimiento y la rejuvenecimiento de los pacientes. Su visión audaz y su enfoque innovador nos inspiran a seguir adelante en la búsqueda de soluciones revolucionarias en el campo de la salud y la biotecnología.
+      
+      Como nuestra PARTNER IN SCIENCE AND DEVELOPMENT, Delfina trae consigo un conjunto de valores fundamentales que coinciden estrechamente con los de 1mPossible. Su dedicación a la excelencia científica, la ética y la integridad, junto con su enfoque en la colaboración, la creatividad y la responsabilidad social, complementa perfectamente nuestra visión de transformar la salud y el bienestar a nivel mundial.
+      
+      Nos complace contar con la destacada contribución de Delfina como miembro integral de nuestro equipo, y estamos ansiosos por impulsar la innovación y generar un impacto positivo en la salud y el bienestar de las personas en todo el mundo.
+
+      
+      `,
+
+      texto_eng:`
+      María Delfina Gallardo, Biotechnologist and Molecular Biologist, is our valuable PARTNER IN SCIENCE AND DEVELOPMENT, hailing from the Iuvenis Research Center, an institution dedicated to biotechnology research. With a solid background and experience in biotechnology and molecular biology, Delfina brings a unique perspective and passionate commitment to the mission of 1mPossible.
+
+Her leadership as Research Director at Iuvenis reflects her deep commitment to scientific research and the development of effective solutions to address the challenges associated with
+
+patient aging and rejuvenation. Her bold vision and innovative approach inspire us to push forward in the pursuit of groundbreaking solutions in the fields of health and biotechnology.
+
+As our PARTNER IN SCIENCE AND DEVELOPMENT, Delfina brings with her a set of core values that closely align with those of 1mPossible. Her dedication to scientific excellence, ethics, and integrity, along with her focus on collaboration, creativity, and social responsibility, perfectly complements our vision of transforming health and well-being globally.
+
+We are pleased to have Delfina's outstanding contribution as an integral member of our team, and we are eager to drive innovation and make a positive impact on the health and well-being of people worldwide.   
       `
     },
     {
@@ -642,6 +737,34 @@ Samanta Reyes posee conocimiento, pasión y un compromiso inquebrantable con el 
 Dr. Samanta Reyes Molina is a passionate researcher who has dedicated her life to exploring the secrets of biology. In the year 2000, she immersed herself in the fascinating world of Biology, graduating with honors in 2006. This was just the beginning of her journey. After nurturing her curiosity during her undergraduate studies, Samanta decided to take her knowledge to the next level. She ventured into the College of Postgraduates Campus Montecillo, where she became a Master of Science in Botany between 2008 and 2011. In 2016, she earned her Ph.D. in Soil Science at the same College of Postgraduates. With dedication and passion, she explored the mysteries of the soil and unraveled the secrets it held.
 
 Samanta became a valuable collaborator in ecology projects, exploring cactus populations in the Valle de Cuatro Ciénegas, Coahuila. She also excelled as a research assistant, teaching plant physiology and contributing to research projects aimed at improving the quality of plant life. Currently, Samanta is immersed in a Master's in Sports Nutrition at the Institute of Higher Studies in Educational Engineering. Her scientific interests are as vast as her thirst for knowledge. From sustainable project management to environmental audits, in vitro cultivation, and taxonomic classification of plants, Samanta is an tireless explorer of the scientific world. Currently, she has research interests in the areas of cryogenics, aging, and anti-aging. She possesses exceptional skills. Samanta is organized, professional, motivated, and quick to learn. Her commitment to scientific advancement is reflected in her active participation in conferences and her constant pursuit of courses and certifications. Samanta Reyes has knowledge, passion, and an unwavering commitment to scientific progress.
+
+      `
+    },
+    {
+      usuario: javier,
+      rol: 'Científico',
+      nombre: 'Javier Darío Sánchez Ortiz',
+      profesion: 'ingeniero civil industrial',
+      job:"Industrial Engineer",
+      texto: `
+      Javier Darío Sánchez Ortiz, un ingeniero civil industrial, se destaca por su experiencia en gestión de proyectos y liderazgo. Reconocido por su creatividad y eficiencia en la resolución de problemas, fue galardonado como Campeón Nacional de Innovación en 2018. Su pasión por el aprendizaje y la enseñanza se refleja en su rol como ayudante en cuatro cátedras durante sus estudios de ingeniería. Actualmente, se encuentra en una nueva etapa como estudiante de Medicina, en Buenos Aires, demostrando su compromiso con el desarrollo profesional. Apasionado por la música, el arte y el crecimiento personal, ha sido galardonado con el primer lugar en dos concursos de escritura, lo que destaca su integralidad como persona.
+
+      En su carrera profesional, Javier ha liderado equipos en la ejecución de proyectos de mejora operativa, logrando un aumento del 20% en la eficiencia, y ha desarrollado estrategias de optimización de recursos que resultaron en un ahorro del 15% en costos operativos. Como Supervisor de Procesos en el Laboratorio Pasteur en 2018-2019, implementó un modelo de predicción de tiempos de proceso utilizando técnicas de minería de datos, reduciendo los tiempos de producción en un 30%. Dirigió un estudio para mejorar la fabricación del fármaco Gemfibrozilo mediante diseño de experimentos, reduciendo los errores en un 50%.
+      
+      Javier ha realizado estudios en el Laboratorio Pasteur para mejorar la fabricación del fármaco Gemfibrozilo mediante análisis de datos y ha participado en proyectos de investigación en Redfarma para optimizar procesos y mejorar la eficiencia operativa. Además, su participación en congresos internacionales y sus logros en concursos empresariales y de escritura demuestran su versatilidad y su capacidad para destacar en diversos campos.
+      
+      Con una combinación única de habilidades técnicas y experiencia en gestión de proyectos, Javier es óptimo para contribuir al desarrollo de nuevas tecnologías. Su capacidad para liderar equipos y su enfoque innovador son activos valiosos en entornos que requieren la aplicación de soluciones tecnológicas avanzadas. Su historial de logros en la optimización de procesos y la implementación de estrategias de mejora operativa respalda su capacidad para enfrentar desafíos técnicos y promover la innovación en diversos campos tecnológicos.
+      `,
+      texto_eng:`
+      
+      Javier Darío Sánchez Ortiz, an industrial engineer, stands out for his experience in project management and leadership. Recognized for his creativity and efficiency in problem-solving, he was awarded as the National Champion of Innovation in 2018. His passion for learning and teaching is reflected in his role as a teaching assistant in four courses during his engineering studies. Currently, he is embarking on a new stage as a medical student in Buenos Aires, demonstrating his commitment to professional development. Passionate about music, art, and personal growth, he has been awarded first place in two writing contests, highlighting his well-rounded personality.
+
+In his professional career, Javier has led teams in executing operational improvement projects, achieving a 20% increase in efficiency, and developed resource optimization strategies resulting in a 15% cost-saving. As a Process Supervisor at the Pasteur Laboratory in 2018-2019, he implemented a predictive time-process model using data mining techniques, reducing production times by 30%. He led a study to improve the manufacturing of the drug Gemfibrozil through experimental design, reducing errors by 50%.
+
+Javier has conducted studies at the Pasteur Laboratory to improve the manufacturing of the drug Gemfibrozil through data analysis and has participated in research projects at Redfarma to optimize processes and improve operational efficiency. Additionally, his participation in international conferences and his achievements in business and writing competitions demonstrate his versatility and ability to excel in various fields.
+
+With a unique combination of technical skills and project management experience, Javier is optimal for contributing to the development of new technologies. His ability to lead teams and his innovative approach are valuable assets in environments requiring the application of advanced technological solutions. His track record of achievements in process optimization and the implementation of operational improvement strategies supports his ability to tackle technical challenges and promote innovation in various technological fields.
+
 
       `
     },
